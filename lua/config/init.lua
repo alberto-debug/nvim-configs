@@ -40,7 +40,6 @@ local opts = {
 }
 
 require("lazy").setup("plugins", opts)
-
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme tokyonight]])
 vim.lsp.set_log_level("warn")
