@@ -1,5 +1,5 @@
 local config = function()
-  local theme = require("lualine.themes.gruvbox")
+  local theme = require("lualine.themes.tokyonight")
   --set bg transparency in all modes
   if theme.normal.c then
     theme.normal.c.bg = nil
@@ -25,6 +25,8 @@ local config = function()
       component_separators = "",
     },
     tabline = {
+    },
+    sections = {
       lualine_a = { { 'mode', separator = { left = '' }, right_padding = 2 } },
       lualine_b = { 'filename', 'branch' },
       lualine_c = {
@@ -43,8 +45,8 @@ local config = function()
       lualine_x = {},
       lualine_y = {},
       lualine_z = { 'location' },
+
     },
-    sections = {},
   })
 end
 
